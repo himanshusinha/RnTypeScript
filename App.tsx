@@ -1,8 +1,8 @@
 import React from 'react';
-import TypeScriptComp from './TypeScriptComp';
+import AppNavigator from './src/navigators/AppNavigator';
 
 const App = () => {
-  return <TypeScriptComp />;
+  return <AppNavigator />;
 };
 
 export default App;
