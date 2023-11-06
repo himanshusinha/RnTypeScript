@@ -6,6 +6,7 @@ import SettingsScreen from '../screens/SettingsScreen';
 import Comp from '../screens/Comp';
 import Product from '../screens/Products';
 import Notes from '../screens/Notes';
+import Component from '../screens/Component';
 export type RootStackParamsList = {
   HomeScreen: undefined;
   SettingsScreen: {
@@ -18,6 +19,7 @@ const AppNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen name={'Component'} component={Component} />
         <Stack.Screen name={'Notes'} component={Notes} />
         <Stack.Screen name={'Products'} component={Product} />
         <Stack.Screen name={'Comp'} component={Comp} />
